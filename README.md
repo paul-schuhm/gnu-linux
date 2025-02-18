@@ -26,6 +26,7 @@ Sources du cours sur GNU/Linux
 - [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html), le manuel de référence du BASH, publié par le projet GNU
 - [Secure Secure Shell](https://stribika.github.io/2015/01/04/secure-secure-shell.html)
 - [The Ultimate Guide to SSH - Setting Up SSH Keys](https://www.freecodecamp.org/news/the-ultimate-guide-to-ssh-setting-up-ssh-keys/)
+- [Bash-scripting](https://github.com/sandervanvugt/bash-scripting), dépôt de [Sander Vanvugt](https://www.sandervanvugt.com/) (Red Hat) contenant de nombreux scripts shell illustratifs
 
 ### Ouvrages
 
