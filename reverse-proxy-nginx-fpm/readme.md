@@ -93,7 +93,15 @@ server {
 	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
 	fastcgi_param SCRIPT_NAME $fastcgi_script_name;
         fastcgi_index index.php;
+	#Important : passage de la requete au pool de process PHP (ecoute sur :9000)
         fastcgi_pass 127.0.0.1:9000;
     }
 }
+~~~
+
+
+Créer un lien symbolique de la config du virtual host dans sites-enabled (publier le site web, activer le virtual host) :
+
+~~~bash
+ln -s sites-available/example.conf sites-enabled/example.conf
 ~~~
