@@ -4,50 +4,72 @@ Deployer une application (php) FastCGI (php-fpm) sur un serveur, avec nginx et f
 
 Acces a une machine (VM), sous Debian.
 
+- [Reverse-proxy avec nging et application php-fpm](#reverse-proxy-avec-nging-et-application-php-fpm)
+  - [Creer un utilisateur de la machine dédiée](#creer-un-utilisateur-de-la-machine-dédiée)
+  - [Installer nginx](#installer-nginx)
+  - [Créer le systeme de fichiers pour l'application](#créer-le-systeme-de-fichiers-pour-lapplication)
+  - [Configuration de Nginx](#configuration-de-nginx)
+
+
 ## Creer un utilisateur de la machine dédiée
 
+~~~bash
 sudo adduser deploy
 sudo usermod -a -G sudo deploy
+~~~
 
 ## Installer nginx
 
+~~~bash
 apt install nginx
+#test
 nginx -v
 sudo nginx
+~~~
 
-Port 80 occupé !
+Port 80 occupé ?
 
 Inspecter avec netstat
 
+~~~bash
 apt install net-tools
 nestat -tupln | grep :80
+~~~
 
-Arreter le service si présent (par ex apache2) sur le port 80
+Arreter le service si présent (par ex apache2) sur le port 80.
 
 Lancer nginx comme un service avec systemd
 
+~~~bash
 systemctl start nginx
 systemctl status nginx
+~~~
 
 Pour tester, installer cURL
 
+~~~bash
 apt install curl
-curl localhost(:80)
+curl localhost
+~~~
 
-Devrait voir le site web par défaut de nginx
+> Vous devez voir le site web par défaut de nginx.
 
-Article sur le load balancing illustré : https://samwho.dev/load-balancing/
+> [Article sur le load balancing illustré](https://samwho.dev/load-balancing/)
 
 ## Créer le systeme de fichiers pour l'application
 
+~~~bash
 mkdir -p /home/deploy/apps/example.com/current/public
 mkdir -p /home/deploy/apps/log
-
-## Configuration de Ngninx
-
-editer le fichier /etc/nginx/sites-available/example.conf
-
 ~~~
+
+## Configuration de Nginx
+
+Configuration du Virtual Host de notre application. On suppose que l'application sera associée au nom de domaine example.com. Éditer le fichier `/etc/nginx/sites-available/example.conf` :
+
+Un VH = 1 fichier de config avec l'entrée `server{}` :
+
+~~~ini
 server {
     listen 80;
     server_name example.com;
