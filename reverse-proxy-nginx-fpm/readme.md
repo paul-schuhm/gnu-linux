@@ -41,3 +41,37 @@ Article sur le load balancing illustré : https://samwho.dev/load-balancing/
 ## Créer le systeme de fichiers pour l'application
 
 mkdir -p /home/deploy/apps/example.com/current/public
+mkdir -p /home/deploy/apps/log
+
+## Configuration de Ngninx
+
+editer le fichier /etc/nginx/sites-available/example.conf
+
+~~~
+server {
+    listen 80;
+    server_name example.com;
+    index index.php;
+
+    # Logs
+    error_log /home/deploy/apps/logs/example.error.log;
+    access_log /home/deploy/apps/logs/example.access.log;
+    root /home/deploy/apps/example.com/current/public;
+
+    # Gestion des requêtes non-php
+    location / {
+        try_files $uri $uri/ /index.php$is_args$args;
+    }
+
+    # Gère les requêtes PHP
+    location ~ \.php {
+        try_files $uri =404;
+	fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        include fastcgi_params;
+	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+	fastcgi_param SCRIPT_NAME $fastcgi_script_name;
+        fastcgi_index index.php;
+        fastcgi_pass 127.0.0.1:9000;
+    }
+}
+~~~
