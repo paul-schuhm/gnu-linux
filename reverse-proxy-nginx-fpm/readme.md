@@ -69,6 +69,8 @@ Configuration du Virtual Host de notre application. On suppose que l'application
 
 Un VH = 1 fichier de config avec l'entrée `server{}` :
 
+> Vous pouvez tout placer dans un seul fichier de config (plusieurs server{}, mais vous perdez en modularité !)
+
 ~~~ini
 server {
     listen 80;
@@ -98,7 +100,6 @@ server {
     }
 }
 ~~~
-
 
 Créer un lien symbolique de la config du virtual host dans sites-enabled (publier le site web, activer le virtual host) :
 
