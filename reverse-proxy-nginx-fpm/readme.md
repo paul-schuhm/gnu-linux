@@ -142,7 +142,6 @@ vim apps/example.com/current/public/index.php
 echo "hello, world"
 ~~~
 
-curl localhost
 
 Donner acces à ngninx aux fichiers de log de l'application php
 
@@ -153,4 +152,14 @@ usermod -a -G deploy www-data
 chmod g+x /home/deploy/app/logs
 ~~~
 
+Donner acces a PHP a l'application (scripts)
+
+~~~bash
+sudo chmod -R +rx /home/deploy/
+~~~
+
 Tester la configuration nginx : sudo nginx -t
+
+Tester l'app
+
+curl localhost
