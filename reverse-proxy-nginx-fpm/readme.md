@@ -124,4 +124,5 @@ Editer le fichier du pool :  /etc/php/8.2/fpm/pool.d/www.conf
 ~~~ini
 user=deploy
 group=deploy
+listen = 127.0.0.1:9000
 ~~~
