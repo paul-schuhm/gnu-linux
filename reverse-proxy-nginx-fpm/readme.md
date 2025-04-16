@@ -104,7 +104,7 @@ server {
 Créer un lien symbolique de la config du virtual host dans sites-enabled (publier le site web, activer le virtual host) :
 
 ~~~bash
-ln -s sites-available/example.conf sites-enabled/example.conf
+ln -s /etc/nginx/sites-available/example.conf /etc/nginx/sites-enabled/example.conf
 ~~~
 
 ## Installer PHP-FPM
@@ -136,3 +136,21 @@ systemctl status php8.2-fpm
 Tester, avec une app PHP minimale (script)
 
 vim apps/example.com/current/public/index.php
+
+~~~php
+<?php
+echo "hello, world"
+~~~
+
+curl localhost
+
+Donner acces à ngninx aux fichiers de log de l'application php
+
+Ajouter www-data (l'utilisateur ne nginx) au groupe deploy
+
+~~~bash
+usermod -a -G deploy www-data
+chmod g+x /home/deploy/app/logs
+~~~
+
+Tester la configuration nginx : sudo nginx -t
