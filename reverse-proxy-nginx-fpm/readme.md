@@ -164,14 +164,45 @@ Tester l'app
 
 curl localhost
 
-## Mettre en place un banissement d'IP
+## Mettre en place un banissement d'IP dans notre application web
 
 Prérequis: services fail2ban et (parefeu) nftables actifs
-
 
 1. Dans notre application, ecrire un log quand action jugée malveillante. Le log doit contenir l'IP de l'agent malveillant;
 2. Indiquer à fail2ban où trouver le log;
 3. Indiquer à fail2ban un pattern pour identifier une ligne de log malveillante.
 
+
+Imagine une ressource de login qu'on veut proteger
+
+~~~php
+<?php
+session_start();
+
+$USER = 'admin';
+$PASS = 'secret';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $user = $_POST['username'] ?? '';
+    $pass = $_POST['password'] ?? '';
+
+    if ($user === $USER && $pass === $PASS) {
+        $_SESSION['auth'] = true;
+        echo "Login success";
+    } else {
+        error_log("Login failed for user '$user' from {$_SERVER['REMOTE_ADDR']}");
+        http_response_code(403);
+        echo "Login failed";
+    }
+    exit;
+}
+?>
+
+<form method="post">
+    <input name="username" placeholder="Username">
+    <input name="password" placeholder="Password" type="password">
+    <button type="submit">Login</button>
+</form>
+~~~
 
 
