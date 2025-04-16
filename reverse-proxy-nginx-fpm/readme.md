@@ -109,6 +109,8 @@ ln -s sites-available/example.conf sites-enabled/example.conf
 
 ## Installer PHP-FPM
 
+Installer php-fpm et quelques extensions utiles:
+
 ~~~bash
 sudo apt install php8.2-fpm php8.2-cli php8.2-curl php8.2-gd php8.2-mcrypt php8.2-opcache php8.2-intl
 ~~~
