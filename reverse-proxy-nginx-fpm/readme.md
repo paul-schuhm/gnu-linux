@@ -117,4 +117,11 @@ sudo apt install php8.2-fpm php8.2-cli php8.2-curl php8.2-gd php8.2-mcrypt php8.
 
 Configuration de PHP-FPM et du pool de process:
 
-Editer le fichier /etc/php/8.2/fpm/php-fpm.conf
+Editer le fichier de config globale de FPM :  /etc/php/8.2/fpm/php-fpm.conf
+
+Editer le fichier du pool :  /etc/php/8.2/fpm/pool.d/www.conf
+
+~~~ini
+user=deploy
+group=deploy
+~~~
