@@ -106,3 +106,8 @@ Créer un lien symbolique de la config du virtual host dans sites-enabled (publi
 ~~~bash
 ln -s sites-available/example.conf sites-enabled/example.conf
 ~~~
+
+## Installer PHP-FPM
+
+~~~bash
+sudo apt install php8.2-fpm php8.2-cli php8.2-curl php8.2-gd php8.2-mcrypt php8.2-opcache php8.2-intl~~~
