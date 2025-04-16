@@ -126,3 +126,13 @@ user=deploy
 group=deploy
 listen = 127.0.0.1:9000
 ~~~
+
+Démarrer le service php-fpm :
+
+systemctl start php8.2-fpm
+systemctl enable php8.2-fpm
+systemctl status php8.2-fpm
+
+Tester, avec une app PHP minimale (script)
+
+vim apps/example.com/current/public/index.php
