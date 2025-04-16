@@ -163,3 +163,15 @@ Tester la configuration nginx : sudo nginx -t
 Tester l'app
 
 curl localhost
+
+## Mettre en place un banissement d'IP
+
+Prérequis: services fail2ban et (parefeu) nftables actifs
+
+
+1. Dans notre application, ecrire un log quand action jugée malveillante. Le log doit contenir l'IP de l'agent malveillant;
+2. Indiquer à fail2ban où trouver le log;
+3. Indiquer à fail2ban un pattern pour identifier une ligne de log malveillante.
+
+
+
