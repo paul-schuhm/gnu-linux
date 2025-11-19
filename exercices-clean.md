@@ -1,8 +1,5 @@
 # GNU/Linux avancé - Exercices
 
-```{=html}
-<hr>
-```
 ## Exercice 1
 
 > Objectifs : Paysage GNU/Linux, Savoir utiliser la documentation `man`,
@@ -87,8 +84,7 @@ Musique
 1.  Dans votre répertoire d'accueil, créer l'arborescence suivante, en
     n'utilisant que des chemins relatifs
 
-```{=html}
-<!-- -->
+
 ```
     rep1
        |---fich11
@@ -99,6 +95,7 @@ Musique
        |---rep3
           |---fich31
           |---fich32      
+```
 
 2.  Comment déplacer toute l'arborescence rep3 sous le repertoire rep2 ?
     Supprimer tout sauf rep1, fich11 et fich12.
@@ -137,12 +134,12 @@ Musique
 1.  Écrire un script shell qui écrit sur sa sortie standard les messages
     suivants :
 
-```{=html}
-<!-- -->
+
 ```
     mon nom est xxxx
     je suis appelé avec yyy arguments
     qui sont : 111 222 333 444
+```
 
 où `xxx` sera remplacé par le nom sous lequel ce shell script a été
 invoqué, `yyy` par le nombre d'arguments et `111, 222,` etc. par les
