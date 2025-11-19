@@ -4,6 +4,7 @@ Sources du cours sur GNU/Linux
 
 - [GNU/Linux](#gnulinux)
   - [Démos](#démos)
+  - [Fiche d'exercices](#fiche-dexercices)
   - [Bibliographie](#bibliographie)
     - [Documentation, références, articles](#documentation-références-articles)
     - [Ouvrages](#ouvrages)
@@ -20,6 +21,12 @@ Sources du cours sur GNU/Linux
 - [Accéder aux démos programmation shell](./demos-shell/)
 
 > [Source](https://github.com/sandervanvugt/bash-scripting) de certaines démos shell
+
+## Fiche d'exercices
+
+> Sera mise à jour régulièrement
+
+[Accéder à la fiche d'exercices.](./exercices-clean.md)
 
 ## Bibliographie
 
