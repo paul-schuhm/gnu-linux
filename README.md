@@ -1,8 +1,10 @@
-# GNU/Linux
+# GNU/Linux (et UNIX)
 
 Sources du cours sur GNU/Linux
 
-- [GNU/Linux](#gnulinux)
+<img src="./assets/kern-unix-demo.png" width=400 alt="Brian Kernighan casually doing a demonstration of UNIX philosophy">
+
+- [GNU/Linux (et UNIX)](#gnulinux-et-unix)
   - [Démos](#démos)
   - [Bibliographie](#bibliographie)
     - [Documentation, références](#documentation-références)
