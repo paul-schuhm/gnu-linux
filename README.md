@@ -41,7 +41,7 @@ Sources du cours sur GNU/Linux
 
 ### Ouvrages
 
-<img src="./assets/comet-book.jpeg" width=400><img src="./assets/osdesign.webp" width=400><img src="./assets/Linux Programming Interface.jpg" width=400>
+<img src="./assets/comet-book.jpeg" height=400><img src="./assets/osdesign.webp" height=400><img src="./assets/Linux Programming Interface.jpg" height=400>
 
 #### OS (concepts fondamentaux)
 
