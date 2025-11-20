@@ -41,6 +41,8 @@ Sources du cours sur GNU/Linux
 
 ### Ouvrages
 
+<img src="./assets/comet-book.jpeg" width=400><img src="./assets/osdesign.webp" width=400><img src="./assets/Linux Programming Interface.jpg" width=400>
+
 #### OS (concepts fondamentaux)
 
 - [**Operating Systems, three easy pieces**](https://pages.cs.wisc.edu/~remzi/OSTEP/), ou le *Comet OS Book*, de Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau (University of Wisconsin-Madison), publié par l'université du Wisconsin, 2008, continuellement mis à jour. [Accessible en ligne](https://pages.cs.wisc.edu/~remzi/OSTEP/) (**LP++**)
