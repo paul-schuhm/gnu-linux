@@ -2,7 +2,7 @@
 
 Sources du cours sur GNU/Linux
 
-<img src="./assets/kern-unix-demo.png" width=400 title="Brian Kernighan casually doing a demonstration of UNIX philosophy" alt="Brian Kernighan casually doing a demonstration of UNIX philosophy"> <img src="./assets/kern-unix-demo-2.png">
+<img src="./assets/kern-unix-demo.png" width=400 title="Brian Kernighan casually doing a demonstration of UNIX philosophy" alt="Brian Kernighan casually doing a demonstration of UNIX philosophy"> <img src="./assets/unix-demo.png">
 
 - [GNU/Linux (et UNIX)](#gnulinux-et-unix)
   - [Démos](#démos)
