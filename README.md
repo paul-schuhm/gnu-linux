@@ -59,7 +59,8 @@ Sources du cours sur GNU/Linux
 
 #### GNU/Linux
 
-[Practical Linux System Administration](https://www.oreilly.com/library/view/practical-linux-system/9781098109028/), de Kenneth Hess, O'Reilly, 2023. Approche **pratique**. Guides sur les différentes procédures. A disposer auprès de soi. Très complet, clair.
+- [Practical Linux System Administration](https://www.oreilly.com/library/view/practical-linux-system/9781098109028/), de Kenneth Hess, O'Reilly, 2023. Approche **pratique**. Guides sur les différentes procédures. A disposer auprès de soi. Très complet, clair.
+- [The Linux Programming Interface](https://nostarch.com/tlpi), Michael Kerrisk, publié chez No Starch Press, 2010.**Plus avancé**. Explique **l’API** POSIX/Linux en C et comment **interagir avec le noyau** (couvre également les notions fondamentales d'Unix)
 
 #### Open-source, Free Software
 
