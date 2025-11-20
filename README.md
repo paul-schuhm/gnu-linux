@@ -49,12 +49,12 @@ Sources du cours sur GNU/Linux
 
 - [**Operating Systems, three easy pieces**](https://pages.cs.wisc.edu/~remzi/OSTEP/), ou le *Comet OS Book*, de Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau (University of Wisconsin-Madison), publié par l'université du Wisconsin, 2008, continuellement mis à jour. [Accessible en ligne](https://pages.cs.wisc.edu/~remzi/OSTEP/) (**LP++**)
 
-- [Operating Systems Design and Implementation, 3rd edition](https://www.pearson.com/en-us/subject-catalog/p/operating-systems-design-and-implementation/P200000003167?view=educator), d'Andrew S. Tanenbaum, publié chez Pearson, 2007. [Auteur de l'OS Minix](https://fr.wikipedia.org/wiki/Minix), qui a inspiré Linus Torvalds pour créer le noyau Linux. **LE+++**
+- [**Operating Systems Design and Implementation, 3rd edition**](https://www.pearson.com/en-us/subject-catalog/p/operating-systems-design-and-implementation/P200000003167?view=educator), d'Andrew S. Tanenbaum, publié chez Pearson, 2007. [Auteur de l'OS Minix](https://fr.wikipedia.org/wiki/Minix), qui a inspiré Linus Torvalds pour créer le noyau Linux. **LE+++**
 
 #### Unix
 
+- [**Philosophie d'Unix**](https://fr.wikipedia.org/wiki/Philosophie_d%27Unix)
 - [Unix programmer's manual Third Edition](https://dspinellis.github.io/unix-v3man/v3man.pdf), publié par K. Thompson et D. M. Ritchie, 1973
-- [Philosophie d'Unix](https://fr.wikipedia.org/wiki/Philosophie_d%27Unix)
 - [Basics of the Unix Philosophy](http://catb.org/esr/writings/taoup/html/ch01s06.html), extrait de [The Art of Unix Programming](http://catb.org/esr/writings/taoup/html/), d'Eric Steven Raymond, 2003, Chapter 1
 
 #### GNU/Linux
