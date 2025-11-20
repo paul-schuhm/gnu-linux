@@ -71,9 +71,9 @@ Sources du cours sur GNU/Linux
 
 #### UNIX
 
-- [UNIX: Making Computers Easier To Use -- AT&T Archives film from 1982, Bell Laboratories](https://www.youtube.com/watch?v=XvDZLjaCJuw&list=PLS3XEhTy6-Ale8Et6pxRR2I3LYNt8-rX3&index=51)
-- [Unix50 - Unix Today and Tomorrow: The Languages](https://www.youtube.com/watch?v=xnCgoEyz31M&list=PLS3XEhTy6-Ale8Et6pxRR2I3LYNt8-rX3&index=38)
 - [Archives AT&T : Le système d'exploitation UNIX](https://www.youtube.com/watch?v=tc4ROCJYbm0), reportage vidéo aux Bells Labs avec démonstration d'UNIX, de son usage au sein du laboratoire
+- [UNIX: Making Computers Easier To Use -- AT&T Archives film from 1982, Bell Laboratories](https://www.youtube.com/watch?v=XvDZLjaCJuw&list=PLS3XEhTy6-Ale8Et6pxRR2I3LYNt8-rX3&index=51), sur le développement du langage C et d'UNIX
+- [Unix50 - Unix Today and Tomorrow: The Languages](https://www.youtube.com/watch?v=xnCgoEyz31M&list=PLS3XEhTy6-Ale8Et6pxRR2I3LYNt8-rX3&index=38)
 
 #### Chaînes YouTube
 
